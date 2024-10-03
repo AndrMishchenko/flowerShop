@@ -1,0 +1,70 @@
+.wrapper-socNet {
+  width: 100%;
+  max-width: 1290px;
+  height: auto;
+  flex-direction: column;
+}
+.wrapper-socNet__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-socNet__header_text {
+  font-size: 36px;
+  color: #03453b;
+  font-weight: 500;
+}
+.wrapper-socNet__header button {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: #03453b;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper-socNet__header button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.wrapper-socNet__boxIMG {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+.wrapper-socNet__boxIMG_location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper-socNet__boxIMG {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .wrapper-socNet__boxIMG {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .wrapper-socNet__header {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper-socNet__header_text {
+    margin-bottom: 10px;
+  }
+  .wrapper-socNet__boxIMG {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=SocialNetwork.css.map */

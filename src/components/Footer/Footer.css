@@ -1,0 +1,179 @@
+.wrapper-footer {
+  width: 100%;
+  height: 300px;
+  background-color: #03453b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 30px 0;
+}
+.wrapper-footer__box {
+  width: 1290px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.wrapper-footer__box_contactBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper-footer__box_contactBlock_phone {
+  width: 250px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.wrapper-footer__box_contactBlock_phone div:nth-child(1) {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.wrapper-footer__box_contactBlock_phone div:nth-child(2) {
+  margin-bottom: 10px;
+}
+.wrapper-footer__box_contactBlock_socialMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  cursor: pointer;
+}
+.wrapper-footer__box_contactBlock_socialMedia img {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+.wrapper-footer__box_contactBlock_socialMedia img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.wrapper-footer__box_flowersBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.wrapper-footer__box_flowersBlock_catalog {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+.wrapper-footer__box_flowersBlock_catalog:hover {
+  color: aqua;
+  transition: 0.5s;
+}
+.wrapper-footer__box_address_emailBox_title {
+  color: white;
+  width: 250px;
+}
+.wrapper-footer__box_address_emailBox_input {
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 90%;
+}
+.wrapper-footer__box_address_emailBox_input input {
+  border: none;
+  height: 20px;
+  width: 60.5%;
+  background-color: transparent;
+  outline: none;
+  font-size: 15px;
+  color: gold;
+  text-align: center;
+}
+.wrapper-footer__box_address_emailBox_input button {
+  border: none;
+  height: 27px;
+  width: 38.75%;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.wrapper-footer__box_address_emailBox_input button:hover {
+  background-color: rgba(127, 255, 212, 0.582);
+}
+.wrapper-footer__box_address_schedule_address {
+  color: white;
+  margin-bottom: 10px;
+}
+.wrapper-footer__box_address_schedule_email {
+  color: white;
+  margin-bottom: 30px;
+}
+.wrapper-footer__box_address_schedule_time div {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .wrapper-footer__box_address_emailBox_input button {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper-footer {
+    height: auto;
+  }
+  .wrapper-footer__box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  .wrapper-footer__box_flowersBlock_catalog {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: 0.5s;
+  }
+  .wrapper-footer__box_flowersBlock_catalog:hover {
+    color: aqua;
+    transition: 0.5s;
+  }
+  .wrapper-footer__box_address_emailBox_title {
+    text-align: center;
+    width: 100%;
+  }
+  .wrapper-footer__box_address_emailBox_input button {
+    width: 30%;
+  }
+  .wrapper-footer__box_address_schedule_address {
+    text-align: center;
+  }
+  .wrapper-footer__box_address_schedule_email {
+    text-align: center;
+  }
+  .wrapper-footer__box_address_schedule_time {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper-catalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 375px) {
+  .wrapper-catalog {
+    grid-template-columns: repeat(3, 1fr);
+    height: 490px;
+  }
+  .wrapper-catalog__position {
+    height: 105px;
+  }
+  .wrapper-catalog__position_text {
+    font-size: 10px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
